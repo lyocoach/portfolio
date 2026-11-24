@@ -320,3 +320,13 @@ button { font: inherit; color: inherit; }
 .lb-prev { left: 12px; top: 50%; transform: translateY(-50%); }
 .lb-next { right: 12px; top: 50%; transform: translateY(-50%); }
 @media (max-width: 640px) { .lb { padding: 56px 8px; } .lb-prev, .lb-next { top: auto; bottom: 16px; transform: none; } .lb-prev { left: 30%; } .lb-next { right: 30%; } }
+
+/* 저서 */
+.book { display: grid; grid-template-columns: 180px 1fr; gap: 32px; align-items: center; margin-top: 40px; padding: 28px; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; }
+.book-cover img { display: block; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 14px 34px rgba(10,30,70,.22); transition: transform .35s var(--ease); }
+.book-cover:hover img { transform: translateY(-4px) rotate(-1deg); }
+.book-label { font-size: 13px; font-weight: 800; color: var(--accent-ink); letter-spacing: .04em; }
+.book h3 { margin-top: 6px; font-size: 26px; font-weight: 800; }
+.book-sub { margin-top: 4px; font-size: 16px; font-weight: 600; color: var(--muted); }
+.book-desc { margin: 14px 0 20px; font-size: 15px; line-height: 1.7; }
+@media (max-width: 640px) { .book { grid-template-columns: 1fr; text-align: center; padding: 22px; } .book-cover { max-width: 160px; margin: 0 auto; } }
