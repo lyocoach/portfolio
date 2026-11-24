@@ -330,3 +330,7 @@ button { font: inherit; color: inherit; }
 .book-sub { margin-top: 4px; font-size: 16px; font-weight: 600; color: var(--muted); }
 .book-desc { margin: 14px 0 20px; font-size: 15px; line-height: 1.7; }
 @media (max-width: 640px) { .book { grid-template-columns: 1fr; text-align: center; padding: 22px; } .book-cover { max-width: 160px; margin: 0 auto; } }
+.book-stores { display: flex; flex-wrap: wrap; gap: 8px; }
+.btn-ghost-ink { border: 1px solid var(--line); background: #fff; color: var(--ink, #0b1f3a); }
+.btn-ghost-ink:hover { border-color: var(--accent); }
+@media (max-width: 640px) { .book-stores { justify-content: center; } }
