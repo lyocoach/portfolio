@@ -345,3 +345,15 @@ button { font: inherit; color: inherit; }
 .press-cap { font-size: 13px; color: var(--muted); }
 .press-go { font-size: 13.5px; font-weight: 700; color: var(--accent-ink); }
 @media (max-width: 640px) { .press { grid-template-columns: 1fr; } }
+
+/* 교육 현장 */
+.edu-row { margin-top: 28px; }
+.edu-label { font-size: 13px; font-weight: 800; color: var(--accent-ink); letter-spacing: .04em; }
+.edu-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 12px; }
+.edu-shot { position: relative; padding: 0; border: 0; border-radius: 12px; overflow: hidden; cursor: zoom-in; background: #0b1a33; text-align: left; font: inherit; }
+.edu-shot img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; transition: transform .4s var(--ease); }
+.edu-shot:hover img, .edu-shot:focus-visible img { transform: scale(1.04); }
+.edu-shot span { position: absolute; left: 0; right: 0; bottom: 0; padding: 22px 12px 10px; background: linear-gradient(transparent, rgba(5,15,35,.85)); color: rgba(255,255,255,.8); font-size: 12px; line-height: 1.4; }
+.edu-shot b { display: block; color: #fff; font-size: 14px; }
+.edu-note { margin-top: 8px; font-size: 12.5px; color: var(--muted); }
+@media (max-width: 860px) { .edu-grid { grid-template-columns: repeat(2, 1fr); } }

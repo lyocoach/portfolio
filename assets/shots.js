@@ -23,7 +23,7 @@
     if (opener) opener.focus();
   }
   function step(d) { idx = (idx + d + list.length) % list.length; show(); }
-  document.querySelectorAll('.ax-shots').forEach(function (b) {
+  document.querySelectorAll('.ax-shots, .edu-shot').forEach(function (b) {
     b.addEventListener('click', function () { open(b); });
   });
   lb.querySelector('.lb-close').addEventListener('click', close);
