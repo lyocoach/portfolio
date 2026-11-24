@@ -361,3 +361,6 @@ button { font: inherit; color: inherit; }
 .edu-note { margin-top: 10px; font-size: 12.5px; color: var(--muted); }
 @media (max-width: 640px) { .edu-shot, .edu-shot img { width: 130px; } .edu-shot img { height: 130px; } }
 @media (prefers-reduced-motion: reduce) { .edu-track { animation: none; } .edu-marquee { overflow-x: auto; } }
+.edu-lead { margin-top: 4px; font-size: 15px; font-weight: 600; }
+.edu-shot.is-static { cursor: default; }
+.edu-shot.is-static:hover img { transform: none; box-shadow: 0 6px 18px rgba(10,30,70,.12); }
