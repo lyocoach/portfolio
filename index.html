@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>이영철 · AI × HR 포트폴리오</title>
+<meta name="description" content="People & Culture 리더 이영철의 HR 포트폴리오">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="intro-on">
+
+<!-- ===== 첫 화면(인트로) ===== -->
+<div class="intro" id="intro" role="dialog" aria-label="첫 화면">
+  <canvas class="net" data-net aria-hidden="true"></canvas>
+  <div class="intro-center">
+    <button class="intro-circle" id="introCircle" type="button" aria-label="포트폴리오 입장하기" disabled>
+      <span class="circle-mask">
+        <img class="intro-media" src="assets/intro-poster.jpg" alt="">
+        <video class="intro-media" id="introVideo" muted playsinline preload="auto" poster="assets/intro-poster.jpg" aria-hidden="true">
+          <source src="assets/intro.mp4" type="video/mp4">
+        </video>
+      </span>
+      <svg class="ring" viewBox="0 0 200 200" aria-hidden="true">
+        <circle cx="100" cy="100" r="97"></circle>
+      </svg>
+    </button>
+    <p class="intro-name">이영철 <span>People &amp; Culture Leader</span></p>
+    <p class="intro-hint" id="introHint" aria-live="polite">원을 눌러 입장하세요</p>
+  </div>
+  <button class="skip" id="skipBtn" type="button">건너뛰기</button>
+</div>
+
+<!-- ===== 위쪽 메뉴 ===== -->
+<header class="topbar" id="topbar">
+  <a class="brand" href="#top">이영철<span>AI × HR</span></a>
+  <nav class="menu" aria-label="주요 메뉴">
+    <a href="#about">소개</a>
+    <a href="#capabilities">역량</a>
+    <a href="#ax">AX</a>
+    <a href="#credentials">자격</a>
+    <a href="#contact">연락</a>
+  </nav>
+</header>
+
+<main id="top" tabindex="-1">
+
+  <!-- 히어로 -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <canvas class="net" data-net aria-hidden="true"></canvas>
+    <div class="wrap hero-inner">
+      <p class="eyebrow reveal">People &amp; Culture 리더 · HR 14년</p>
+      <h1 id="heroTitle" class="reveal" style="--d:.08s">이영철</h1>
+      <p class="hero-line reveal" style="--d:.16s"><strong>AI × HR</strong> — 사람과 조직을 이해하고,<br class="br-m"> AI로 HR이 일하는 방식을 바꿉니다</p>
+
+      <ul class="stats" aria-label="핵심 숫자">
+        <li class="stat reveal" style="--d:.05s">
+          <p class="stat-num"><span data-count="14">14</span><small>년</small></p>
+          <p class="stat-label">HR 경력</p>
+        </li>
+        <li class="stat reveal" style="--d:.15s">
+          <p class="stat-num"><small>연 약</small><span data-count="20">20</span><small>억 원</small></p>
+          <p class="stat-label">외주 제작비 절감</p>
+        </li>
+        <li class="stat reveal" style="--d:.25s">
+          <p class="stat-num"><span data-count="1000">1,000</span><small>여 개</small></p>
+          <p class="stat-label">매장 조직 인사·교육</p>
+        </li>
+        <li class="stat reveal" style="--d:.35s">
+          <p class="stat-num"><small>약</small><span data-count="110">110</span><small>명</small></p>
+          <p class="stat-label">P&amp;C 총괄 · 대표이사 직보</p>
+        </li>
+      </ul>
+
+      <div class="actions reveal" style="--d:.2s">
+        <button class="btn btn-ghost" type="button" disabled aria-disabled="true">이력서 PDF <em>준비 중</em></button>
+        <button class="btn btn-ghost" type="button" disabled aria-disabled="true">포트폴리오 PDF <em>준비 중</em></button>
+        <a class="btn btn-accent" href="mailto:lyocoach.lab@gmail.com">이메일 보내기</a>
+      </div>
+    </div>
+    <a class="scroll-cue" href="#about" aria-label="아래로 이동"><span></span></a>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about" aria-labelledby="aboutTitle">
+    <div class="wrap about">
+      <div class="about-photo reveal">
+        <div class="portrait">
+          <img class="portrait-media" src="assets/about-poster.jpg" alt="이영철 사진">
+          <video class="portrait-media" id="aboutVideo" muted playsinline loop preload="metadata" poster="assets/about-poster.jpg" aria-hidden="true">
+            <source src="assets/about.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="kicker reveal">ABOUT</p>
+        <h2 id="aboutTitle" class="reveal" style="--d:.06s">경영과 함께 성과·보상·조직을<br>설계하는 HR 리더</h2>
+        <ul class="intro-lines">
+          <li class="reveal" style="--d:.1s">교육 담당으로 출발해 온보딩, 교육 체계, 인재 파이프라인을 차례로 맡아 온 14년차 HR 리더입니다.</li>
+          <li class="reveal" style="--d:.18s">지금은 대표이사 직보로 People &amp; Culture를 총괄하며 보상·조직·문화를 하나의 경영 과제로 다룹니다.</li>
+          <li class="reveal" style="--d:.26s">진단과 데이터로 문제를 정의하고, AI로 HR이 일하는 방식을 가볍게 만듭니다.</li>
+        </ul>
+        <ul class="chips reveal" style="--d:.3s" aria-label="핵심 역량 키워드">
+          <li>경영 파트너</li><li>평가·보상</li><li>조직 설계</li><li>온보딩·리텐션</li><li>리더십·코칭</li><li>조직문화</li><li>컴플라이언스</li><li>AI 전환(AX)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <h3 class="sub-title reveal">경력 흐름</h3>
+      <ol class="timeline">
+        <li class="reveal">
+          <p class="t-period">2012.09 – 2014.06</p>
+          <p class="t-company">(주)KTis</p>
+          <p class="t-role">교육품질관리 담당</p>
+          <p class="t-desc">KT 계열 고객센터 신입 상담사 온보딩·OJT 운영, CS 교육 표준화</p>
+        </li>
+        <li class="reveal" style="--d:.1s">
+          <p class="t-period">2014.07 – 2026.07</p>
+          <p class="t-company">SK PS&amp;Marketing(주)</p>
+          <p class="t-role">인재육성 PM(과장)</p>
+          <p class="t-desc">수도권 매장 1,000여 개·판매 인력 2,000명 이상 대상 교육 표준화<br>교육 담당 → 신입 온보딩 → 교육 체계 혁신 → 인증제·핵심인재 PM</p>
+        </li>
+        <li class="reveal is-now" style="--d:.2s">
+          <p class="t-period">2026.08 – 현재</p>
+          <p class="t-company">티에스에듀(주)</p>
+          <p class="t-role">경영혁신실 피플&amp;컬처팀장(차장)</p>
+          <p class="t-desc">대표이사 직보, 국내 약 110명 People &amp; Culture 총괄<br>해외 센터 2개국(필리핀·남아공) 센터장 채용·평가·재계약</p>
+        </li>
+      </ol>
+      <p class="edu reveal">한양대학교 대학원 조직심리&amp;인재개발전공 석사 졸업 예정(2027.02)</p>
+    </div>
+  </section>
+
+  <!-- 8개 역량 -->
+  <section class="section alt" id="capabilities" aria-labelledby="capTitle">
+    <div class="wrap">
+      <p class="kicker reveal">8 CAPABILITIES</p>
+      <h2 id="capTitle" class="reveal" style="--d:.06s">8개 역량으로 본 HR 경험</h2>
+      <p class="lead reveal" style="--d:.12s">카드를 누르면 대표 사례가 <b>배경 → 실행 → 결과</b> 순서로 펼쳐집니다.</p>
+
+      <div class="cap-grid">
+
+        <article class="cap reveal">
+          <button class="cap-head" type="button" aria-expanded="false" aria-controls="cap1">
+            <span class="cap-no">01</span>
+            <span class="cap-en">BUSINESS PARTNER</span>
+            <span class="cap-title">경영 파트너·HR 전략</span>
+            <span class="cap-sum">성과 데이터로 대표이사 보고 체계를 세우고, AX 중장기 로드맵을 추진</span>
+            <span class="cap-tag">TS</span><span class="cap-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="cap-body" id="cap1"><div class="cap-inner">
+            <h4>성과 데이터로 경영 보고 체계를 세우다</h4>
+            <dl>
+              <dt>배경</dt><dd>승진·연봉 결정에 쓸 객관적인 성과 근거와, 부서·해외 센터 성과를 한 기준으로 보는 경영 보고가 필요했습니다.</dd>
+              <dt>실행</dt><dd><ul>
+                <li>미래전략실(대표이사·경영혁신실장과 함께하는 전략 협의체) 참여</li>
+                <li>부서·해외 센터의 월 성과 데이터 21개월 분석, 최근 추이·증감 사유 중심의 대표이사 보고 양식 설계</li>
+                <li>원자료 교차 검증으로 오류를 바로잡은 뒤 보고</li>
+                <li>상반기 추진업무 회고 → 하반기 추진과제 수립 워크숍을 부서장과 공동 운영</li>
+                <li>AI업무혁신팀 확대를 축으로 전사 AX 중장기 로드맵 수립·추진</li>
+              </ul></dd>
+              <dt>결과</dt><dd class="result">성과 데이터 기반 대표이사 보고 체계 구축 · 성과 기반 승진·연봉 결정 체계 마련</dd>
+            </dl>
+          </div></div>
+        </article>
+
+        <article class="cap reveal" style="--d:.08s">
+          <button class="cap-head" type="button" aria-expanded="false" aria-controls="cap2">
+            <span class="cap-no">02</span>
+            <span class="cap-en">REWARD</span>
+            <span class="cap-title">평가·보상</span>
+            <span class="cap-sum">임원 포함 전 직원 연봉 재계약 총괄, 보상 역전 조정과 형평성 개선 기반 마련</span>
+            <span class="cap-tag">TS</span><span class="cap-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="cap-body" id="cap2"><div class="cap-inner">
+            <h4>전 직원 연봉 재계약으로 보상 기준을 다시 세우다</h4>
+            <dl>
+              <dt>배경</dt><dd>승진·연봉 결정의 근거를 성과로 설명할 필요가 있었고, 직급 간 보상 역전 등 형평성 과제가 있었습니다.</dd>
+              <dt>실행</dt><dd><ul>
+                <li>이사·부장급을 포함한 국내 전 직원 연봉 재계약 총괄, 결과 면담 직접 진행</li>
+                <li>연봉협상 시점에 맞춘 성과 평가, 직책자·구성원 평가표 분리, 검토 양식 표준화</li>
+                <li>보상 이력·내부 비교군 분석으로 임원 보상 의사결정 지원</li>
+                <li>해외 센터장 연봉 재계약을 화상으로 직접 진행</li>
+              </ul></dd>
+              <dt>결과</dt><dd class="result">성과 기반 승진·연봉 결정 체계 마련 · 직급 간 보상 역전 조정, 보상 형평성 개선 기반 마련 · 해외 센터장 보상을 본사 기준으로 일원화</dd>
+            </dl>
+          </div></div>
+        </article>
+
+        <article class="cap reveal">
+          <button class="cap-head" type="button" aria-expanded="false" aria-controls="cap3">
+            <span class="cap-no">03</span>
+            <span class="cap-en">ORGANIZATION</span>
+            <span class="cap-title">조직 설계·변화 관리</span>
+            <span class="cap-sum">전사 조직진단에서 시작해 조직 개편·중간 리더 체계·수평 호칭까지</span>
+            <span class="cap-tag">TS</span><span class="cap-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="cap-body" id="cap3"><div class="cap-inner">
+            <h4>조직진단에서 조직 개편·수평 문화까지</h4>
+            <dl>
+              <dt>배경</dt><dd>새 HR 리더로서 조직의 과제를 사실로 확인하기 위해 리더 피드백·업무 프로세스·소속감 영역을 진단했습니다.</dd>
+              <dt>실행</dt><dd><ul>
+                <li>입사 직후 전사 조직진단 설계·실시, 변화 과제 도출</li>
+                <li>실·팀·파트·모듈 체계로 개편, 부서 명칭·역할 재정비</li>
+                <li>신설 조직(TSA사업팀·AI업무혁신팀) 편입·직무 설계·채용</li>
+                <li>중간 리더 직책(모듈장) 신설과 리더십 교육</li>
+                <li>13개 조직 단위 회의·발표 체계 재편, 부서장 타운홀 운영</li>
+              </ul></dd>
+              <dt>결과</dt><dd class="result">조직 개편·중간 리더 체계 1차 실행 · 직급 호칭 폐지 → “이름+님” 수평 호칭 전환 · 진단 결과를 강점 교육으로 연결</dd>
+            </dl>
+          </div></div>
+        </article>
+
+        <article class="cap reveal" style="--d:.08s">
+          <button class="cap-head" type="button" aria-expanded="false" aria-controls="cap4">
+            <span class="cap-no">04</span>
+            <span class="cap-en">TALENT</span>
+            <span class="cap-title">인재 확보·온보딩·리텐션</span>
+            <span class="cap-sum">신입 3개월 내 이직률 18%→12%, 온보딩 2주→5일 재설계</span>
+            <span class="cap-tag">SK · TS</span><span class="cap-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="cap-body" id="cap4"><div class="cap-inner">
+            <h4>들어오고, 정착하고, 남는 과정을 설계하다</h4>
+            <dl>
+              <dt>배경</dt><dd>SK에서는 신입 3개월 내 이직률이 18%로 조기 이탈이 컸고, 연 120명 규모 신입의 현장 적응을 도와야 했습니다.</dd>
+              <dt>실행</dt><dd><ul>
+                <li>신입 OJT와 데이터 기반 Follow-up(후속 관리) 설계·운영</li>
+                <li>리더 코칭 5대 전략(화법·성과 대화·피드백·동기부여·갈등관리) 체계화</li>
+                <li>통신사관학교 약 5년 운영: 판매 인력 모집·교육·채용·육성을 한 과정으로 연결</li>
+                <li>(TS) 공고 기준-이력서 적합도 평가 체계 구축, 온보딩을 공통 2일 + 실무 3일로 재설계</li>
+                <li>(TS) 입·퇴사 데이터를 정비해 이직률·조기 퇴사율을 지표화하고 경영진에 보고</li>
+              </ul></dd>
+              <dt>결과</dt><dd class="result">신입 3개월 내 이직률 18%→12%(33% 개선) · 직무 역량 평가 13% 향상 · 리더 소통 만족도 85% · 2017년 통신사관학교 약 100명 이수·82명 대리점 배치</dd>
+            </dl>
+          </div></div>
+        </article>
+
+        <article class="cap reveal">
+          <button class="cap-head" type="button" aria-expanded="false" aria-controls="cap5">
+            <span class="cap-no">05</span>
+            <span class="cap-en">DEVELOPMENT</span>
+            <span class="cap-title">인재육성·리더십</span>
+            <span class="cap-sum">역량 인증제 L1~L4, AI 교육 2,500명, 교육 훈련비 연 3억 원 절감</span>
+            <span class="cap-tag">SK</span><span class="cap-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="cap-body" id="cap5"><div class="cap-inner">
+            <h4>기준을 세워 인재를 키우고 리더로 연결하다</h4>
+            <dl>
+              <dt>배경</dt><dd>전 직군 공통 역량 기준과 핵심인재 선발 체계가 필요했고, 대면 중심 교육은 비용이 높고 도달 범위가 좁았습니다.</dd>
+              <dt>실행</dt><dd><ul>
+                <li>전 직군 역량 인증제(L1~L4) TF PM 약 2년, L3~L4 공동 기획·전 단계 운영</li>
+                <li>최종 인증 인재로 핵심인재 자문단 구성·확대, 리더십·코칭·강의 역량 교육과 줌 멘토 코칭</li>
+                <li>대면 교육 일부를 비대면·하이브리드로 전환, 커크패트릭 4단계로 교육 성과 분석</li>
+                <li>ChatGPT 활용 AI 업무 혁신 교육 운영</li>
+              </ul></dd>
+              <dt>결과</dt><dd class="result">교육 훈련비 연 3억 원 절감·교육 수혜 대상 35% 확대 · AI 업무 혁신 교육 2,500명 수료 · 인증제 참여 수백 명, 핵심인재 자문단을 회사 정책 의견 수렴 채널로 정착 · 누적 강의·기획 1만 시간</dd>
+            </dl>
+          </div></div>
+        </article>
+
+        <article class="cap reveal" style="--d:.08s">
+          <button class="cap-head" type="button" aria-expanded="false" aria-controls="cap6">
+            <span class="cap-no">06</span>
+            <span class="cap-en">CULTURE</span>
+            <span class="cap-title">조직문화·몰입</span>
+            <span class="cap-sum">갤럽 강점 진단 기반 전사 교육 만족도 4.75/5.0, 수평 호칭 전환</span>
+            <span class="cap-tag">TS · SK</span><span class="cap-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="cap-body" id="cap6"><div class="cap-inner">
+            <h4>강점과 인정으로 일하는 문화를 바꾸다</h4>
+            <dl>
+              <dt>배경</dt><dd>조직진단에서 리더 피드백·소속감이 변화 과제로 나왔고, 구성원 강점을 일과 연결할 공통 언어가 필요했습니다.</dd>
+              <dt>실행</dt><dd><ul>
+                <li>갤럽 강점 Top5 전 직원 분석, 부서장 대상 팀 강점 세션</li>
+                <li>강점 기반 전사 교육·리더 심화 과정 설계와 직접 강의</li>
+                <li>월례회의 승진식·포상식을 공식 행사로 격상, “이름+님” 수평 호칭 전환</li>
+                <li>(SK) 경영진-구성원 소통 프로그램(CEO 간담회), 조직활성화 워크숍·캔미팅 기획·운영</li>
+              </ul></dd>
+              <dt>결과</dt><dd class="result">강점 기반 전사 교육 만족도 4.75/5.0 · 리더 심화 과정 4.57/5.0 · 인정 문화 기반 마련</dd>
+            </dl>
+          </div></div>
+        </article>
+
+        <article class="cap reveal">
+          <button class="cap-head" type="button" aria-expanded="false" aria-controls="cap7">
+            <span class="cap-no">07</span>
+            <span class="cap-en">COMPLIANCE · COST</span>
+            <span class="cap-title">노무·컴플라이언스·비용 성과</span>
+            <span class="cap-sum">외주 제작비 연 약 20억 원 절감, 안전교육 B2B로 신규 매출 연 1.5억 원</span>
+            <span class="cap-tag">SK · TS</span><span class="cap-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="cap-body" id="cap7"><div class="cap-inner">
+            <h4>법을 지키고, 비용을 줄이고, 매출을 만들다</h4>
+            <dl>
+              <dt>배경</dt><dd>매장 홍보물 외주 제작 비용이 컸고, 안전보건 법적 리스크에 대응하면서 사내 교육 역량을 외부 수익으로 연결할 기회가 있었습니다.</dd>
+              <dt>실행</dt><dd><ul>
+                <li>매장 홍보물을 외주 대신 자체 제작하도록 제작 역량 교육으로 전환</li>
+                <li>산업안전기사 기반 전사 안전보건 체계 구축</li>
+                <li>현대모비스 안전체험교육관 구축·교육 운영 기획에 파트너로 참여, B2B 안전교육 시나리오 기획</li>
+                <li>(TS) 노무사와 협업한 근로계약 운영, 법정의무교육 직접 강의·증빙 관리, 사업주 훈련·육아휴직 지원금 등 정부 지원 확보</li>
+              </ul></dd>
+              <dt>결과</dt><dd class="result">외주 제작비 연 약 20억 원 절감 · 안전교육 B2B 사업화로 신규 매출 연 1.5억 원 · 법적 리스크 선제 대응</dd>
+            </dl>
+          </div></div>
+        </article>
+
+        <article class="cap reveal" style="--d:.08s">
+          <button class="cap-head" type="button" aria-expanded="false" aria-controls="cap8">
+            <span class="cap-no">08</span>
+            <span class="cap-en">AX · DATA · GLOBAL</span>
+            <span class="cap-title">AI 전환·HR 데이터·글로벌</span>
+            <span class="cap-sum">전사 월 1회 정례 AI 교육·전 부서 Claude 도입, 해외 센터 리더 관리</span>
+            <span class="cap-tag">TS</span><span class="cap-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="cap-body" id="cap8"><div class="cap-inner">
+            <h4>AI 전환과 해외 센터까지 HR의 범위를 넓히다</h4>
+            <dl>
+              <dt>배경</dt><dd>경영진의 AI 전환 방향을 전사 실행으로 옮겨야 했고, 필리핀·남아공 센터(현지 인력 약 700명)는 센터장 관리가 핵심이었습니다.</dd>
+              <dt>실행</dt><dd><ul>
+                <li>AI업무혁신팀 신설·채용 주도, 2026.10부터 전사 월 1회 정례 AI 교육</li>
+                <li>부서별 AI 업무 자동화 컨테스트 운영, 전 부서 Claude 도입</li>
+                <li>외부 유료 솔루션 없이 HR 도구 직접 구축(아래 AX 참고)</li>
+                <li>센터장 채용·평가·화상 재계약, 센터 월 성과를 본사 성과관리에 편입, 해외 출장 보고서 제도 신설</li>
+              </ul></dd>
+              <dt>결과</dt><dd class="result">AI 활용 교육 만족도 4.5/5.0 · 전 부서 Claude 도입 · 2개국 센터 리더 관리를 본사 성과·보상 기준으로 일원화</dd>
+            </dl>
+          </div></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- AX -->
+  <section class="section dark" id="ax" aria-labelledby="axTitle">
+    <div class="wrap">
+      <p class="kicker reveal">AX · AI TRANSFORMATION</p>
+      <h2 id="axTitle" class="reveal" style="--d:.06s">HR 리더가 직접 만든 AI 도구</h2>
+      <p class="lead reveal" style="--d:.12s">외부 유료 솔루션 없이, HR 현장의 문제를 AI로 직접 풀었습니다.</p>
+
+      <div class="ax-grid">
+        <article class="ax reveal">
+          <p class="ax-status">운영 중</p>
+          <h3>일일업무 달력</h3>
+          <dl>
+            <dt>문제</dt><dd>대표이사에게 매일 하는 업무 보고를 날짜별로 한눈에 정리할 도구가 필요했습니다.</dd>
+            <dt>구축</dt><dd>AI로 대표이사 보고용 업무 달력을 직접 기획·구축했습니다.</dd>
+            <dt>기능</dt><dd>날짜별 업무 기록, 월 단위로 모아 보는 업무 보고</dd>
+          </dl>
+        </article>
+        <article class="ax reveal" style="--d:.08s">
+          <p class="ax-status is-plan">기획 완료</p>
+          <h3>직원의 소리</h3>
+          <dl>
+            <dt>문제</dt><dd>구성원이 의견을 편하게 남길 수 있는 공식 창구가 필요했습니다.</dd>
+            <dt>구축</dt><dd>AI로 구성원 의견 창구의 화면과 처리 흐름을 기획·설계했습니다.</dd>
+            <dt>기능</dt><dd>구성원 의견 접수, HR의 확인·대응 흐름</dd>
+          </dl>
+        </article>
+        <article class="ax reveal">
+          <p class="ax-status">운영 중</p>
+          <h3>사내 LMS</h3>
+          <dl>
+            <dt>문제</dt><dd>신규 입사자와 기존 직원 교육을 한곳에서 운영할 도구가 필요했습니다.</dd>
+            <dt>구축</dt><dd>교육 매뉴얼과 사내 LMS를 외부 유료 솔루션 없이 직접 구축했습니다.</dd>
+            <dt>기능</dt><dd>교육 매뉴얼·과정 열람, 신규 입사자·재직자 교육 운영</dd>
+          </dl>
+        </article>
+        <article class="ax reveal" style="--d:.08s">
+          <p class="ax-status">운영 중</p>
+          <h3>피플&amp;컬처 서명함</h3>
+          <dl>
+            <dt>문제</dt><dd>직원 서명을 받고 기록을 안전하게 남기는 과정이 번거로웠습니다.</dd>
+            <dt>구축</dt><dd>전자 서명 웹앱을 직접 구축했습니다.</dd>
+            <dt>기능</dt><dd>링크를 받은 직원이 로그인 없이 서명, 관리자 전용 로그인, 서명 기록 보존</dd>
+          </dl>
+        </article>
+        <article class="ax reveal" style="--d:.16s">
+          <p class="ax-status">기획 완료</p>
+          <h3>교육 시스템 개편 화면 설계서</h3>
+          <dl>
+            <dt>문제</dt><dd>기존 교육 시스템을 새 시스템으로 옮기면서, 빠지는 기능 없이 개발팀에 요구사항을 정확히 전달해야 했습니다.</dd>
+            <dt>구축</dt><dd>AI로 기존·신규 화면을 하나하나 비교한 화면 설계서를 직접 기획·작성했습니다.</dd>
+            <dt>기능</dt><dd>메뉴 구조도, 15개 화면 설계(학습·퀴즈·워크북·교육 현황·신입 온보딩 과제), 직원·인사 담당·부서장 역할별 권한, 기능 비교표와 누락 점검표, 개발팀 전달 메모</dd>
+          </dl>
+        </article>
+      </div>
+      <p class="note reveal">개인이 기획·구축한 사례이며 회사의 공식 자료가 아닙니다.</p>
+    </div>
+  </section>
+
+  <!-- 자격·저서·강연 -->
+  <section class="section" id="credentials" aria-labelledby="credTitle">
+    <div class="wrap">
+      <p class="kicker reveal">CREDENTIALS</p>
+      <h2 id="credTitle" class="reveal" style="--d:.06s">자격 · 저서 · 강연</h2>
+      <div class="cred-grid">
+        <div class="cred reveal">
+          <h3>자격</h3>
+          <ul>
+            <li><b>KAC 인증코치</b><span>한국코치협회 · 2025.10</span></li>
+            <li><b>HRD전문가 1급 · 리더십지도사 1급 · 퍼실리테이터 1급</b><span>2024.05</span></li>
+            <li><b>전문코치 2급</b><span>2025.08</span></li>
+            <li><b>산업안전기사</b><span>한국산업인력공단 · 2025.06</span></li>
+            <li><b>TCI 심리평가</b><span>2026.01</span></li>
+          </ul>
+        </div>
+        <div class="cred reveal" style="--d:.08s">
+          <h3>저서 · 학력</h3>
+          <ul>
+            <li><b>저서 「AI-Powered 프레젠테이션」</b><span>2026.02</span></li>
+            <li><b>한양대학교 대학원 조직심리&amp;인재개발전공</b><span>석사 졸업 예정 · 2027.02</span></li>
+            <li><b>코칭 심리·퍼실리테이션 과정</b><span>한양대 상담심리대학원 · 2024.08–2025.05</span></li>
+          </ul>
+        </div>
+        <div class="cred reveal" style="--d:.16s">
+          <h3>강연 · 대외 활동</h3>
+          <ul>
+            <li><b>한양대 BK21 BK-TED 생성형 AI 초청 강연</b><span>2025.12</span></li>
+            <li><b>주한미국대사관 Alumni Mentorship Forum 멘토</b><span>2024.05</span></li>
+            <li><b>누적 강의·프로그램 기획 1만 시간</b><span>SK · 학습자 1만 명</span></li>
+            <li><b>SKMS KPI 1위 · 우수 성과자 3회</b><span>SK · 2025.11 / 2015·2016·2023</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 연락 -->
+  <section class="section contact" id="contact" aria-labelledby="contactTitle">
+    <div class="wrap">
+      <p class="kicker reveal">CONTACT</p>
+      <h2 id="contactTitle" class="reveal" style="--d:.06s">함께 이야기 나누고 싶으시다면</h2>
+      <p class="lead reveal" style="--d:.12s">진단과 데이터로 문제를 정의하고, 경영진과 같은 숫자로 사람과 조직을 설계합니다.</p>
+      <div class="reveal" style="--d:.18s"><a class="btn btn-accent btn-lg" href="mailto:lyocoach.lab@gmail.com">이메일 보내기</a></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 이영철 · 개인 포트폴리오</p>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
