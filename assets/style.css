@@ -260,6 +260,7 @@ button { font: inherit; color: inherit; }
 .cred-more summary::after { content: " ＋"; }
 .cred-more[open] summary::after { content: " －"; }
 .cred-more ul { grid-template-columns: repeat(3, 1fr); gap: 12px 24px; }
+.cred-more.is-list ul { grid-template-columns: 1fr; gap: 12px; }
 @media (max-width: 960px) {
   .cred-grid.has-wide { grid-template-columns: 1fr; }
   .cred-groups { grid-template-columns: 1fr; gap: 22px; }
