@@ -248,6 +248,23 @@ button { font: inherit; color: inherit; }
 .cred ul { display: grid; gap: 14px; margin-top: 16px; }
 .cred b { display: block; font-size: 15.5px; font-weight: 700; line-height: 1.45; }
 .cred span { display: block; font-size: 13.5px; color: var(--muted); }
+/* 자격 분야별 묶음 (11-25) */
+.cred-grid.has-wide { grid-template-columns: repeat(2, 1fr); }
+.cred-wide { grid-column: 1 / -1; }
+.cred-groups { display: grid; grid-template-columns: 1.3fr 1.1fr .8fr; gap: 28px; margin-top: 18px; }
+.cred-group { font-size: 13px; font-weight: 800; letter-spacing: .03em; color: var(--muted); padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+.cred-groups ul { margin-top: 14px; }
+.cred-more { margin-top: 22px; padding-top: 16px; border-top: 1px dashed var(--line); }
+.cred-more summary { cursor: pointer; font-size: 14px; font-weight: 700; color: var(--accent-ink); list-style: none; }
+.cred-more summary::-webkit-details-marker { display: none; }
+.cred-more summary::after { content: " ＋"; }
+.cred-more[open] summary::after { content: " －"; }
+.cred-more ul { grid-template-columns: repeat(3, 1fr); gap: 12px 24px; }
+@media (max-width: 960px) {
+  .cred-grid.has-wide { grid-template-columns: 1fr; }
+  .cred-groups { grid-template-columns: 1fr; gap: 22px; }
+  .cred-more ul { grid-template-columns: 1fr; }
+}
 
 /* ---------- 연락 ---------- */
 .contact { background: linear-gradient(160deg, #0E2342 0%, var(--navy) 100%); color: #fff; text-align: center; }
